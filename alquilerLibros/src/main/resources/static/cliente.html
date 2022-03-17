@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cliente</title>
+        <link rel="stylesheet" href="css/Estilos.css">
+    </head>
+    <body>
+        <div id="contenedorCliente">
+            <div id="cerrar">
+                <button id="cerrarS" onclick="logout()">Cerrar sesión</button>
+            </div>
+
+            <h1>Alquiler de libros</h1>
+
+            <button class="boton" onclick="consultarLibrosCliente()">Cargar tabla</button><br>
+
+            <div id="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Autor</th>
+                            <th>nDisponible</th>
+                            <th>vAlquiler</th>
+                            <th>Funcion</th>
+                        </tr>
+                    </thead>
+                    <tbody class="cuerpo" id="contenidoTablaLibroC"></tbody>
+                </table>
+            </div>
+
+            <!--Modal -->
+            <div class="modal-container" id="modal_container">
+                <div class="modal">
+                    <h1>Reservas</h1>
+
+                    <input type="number" id="idLibro" placeholder="Número ID del libro">
+                    <input type="date" id="fecha" placeholder="Ingrese la fecha de devolución">
+                    <input type="number" id="cantlibro" placeholder="Cantidad">
+
+                    <br><br>
+                    <button class="boton" onclick="reservaLibro()">Aceptar</button>
+                    <button class="boton" onclick="salirModal()">Salir</button>
+                </div>
+            </div>
+            <div id="aux"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="JS/app.js"></script>
+    </body>
+</html>

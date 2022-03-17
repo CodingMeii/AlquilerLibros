@@ -1,0 +1,127 @@
+body{
+    background-color: gray;
+}
+
+#contenedor, #contenedorRegis, #contenedorLogin, #contenedorAdmin, #contenedorCliente {
+    background-color: lightgrey;
+    margin: 0px auto;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 35%;
+    margin-top: 18%;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+#contenedorRegis{
+    margin-top: 13%;
+}
+
+#contenedorCliente, #contenedorLogin {
+    margin-top: 15%;
+}
+
+#contenedorAdmin{
+    margin: 30%;
+    margin-top: 5%;
+}
+
+#adminCont{
+    margin: 0px auto;
+    display: flex;
+}
+
+#registroLibro{
+    width: 50%;
+}
+
+#botonesLibro {
+    width: 50%;
+    margin-top: 50px;
+}
+
+#cerrar{
+    text-align: right;
+}
+
+#cerrar #cerrarS {
+    background-color: transparent;
+    border-color: transparent;
+    font-family: Arial;
+    color: brown;
+    padding: 5px;
+}
+
+#contenedor h1, #contenedorRegis h1, #contenedorLogin h1, #contenedorAdmin h1, #contenedorCliente h1 {
+    padding: 30px;
+    font-family: Arial;
+    font-size: 40px;
+}
+
+#contenedor #boton, #contenedorRegis #boton, #contenedorLogin #boton, #contenedorAdmin .boton, #contenedorCliente .boton{
+    width: 250px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    border-color: lightgray;
+    margin-bottom: 10px;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+input {
+    color: black;
+    border: none;
+    /*border-bottom: 1px solid rgb(255, 255, 255);*/
+    background-color: rgb(187, 187, 187);
+    height:10px;
+    border-radius: 5px;
+    width:300px;
+    padding:12px;
+    margin: 5px;
+    font-family: Arial;
+}
+
+#tabla {
+    margin: 15px;
+}
+
+#aux {
+    height: 25px;
+    width: 100%;
+}
+
+/*modal*/
+.modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.719);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal {
+    background-color: white;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+

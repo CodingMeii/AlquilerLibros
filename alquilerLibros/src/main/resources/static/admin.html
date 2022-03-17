@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin</title>
+        <link rel="stylesheet" href="css/Estilos.css">
+    </head>
+    <body>
+        <div id="contenedorAdmin">
+            <div id="cerrar">
+                <button id="cerrarS" onclick="logout()">Cerrar sesión</button>
+            </div>
+
+            <h1>CRUD Libros</h1>
+
+            <div id="adminCont">
+                <div id="registroLibro">
+                    <input type="number" id="id" placeholder="Id libro"><br>
+                    <input type="text" id="nombre" placeholder="Nombre libro"><br>
+                    <input type="text" id="autor" placeholder="Autor libro"><br>
+                    <input type="number" id="nEjemplares" placeholder="Número de ejmplares"><br>
+                    <input type="number" id="nDisponible" placeholder="Número libros disponibles"><br>
+                    <input type="number" id="nReservados" placeholder="Número libros reservados"><br>
+                    <input type="number" step=0.01 id="vAlquiler" placeholder="Valor alquiler libro"><br>
+                </div>
+
+                <div id="botonesLibro">
+                    <button class="boton" onclick="crearLibro()">Crear</button><br>
+                    <button class="boton" onclick="actualizarLibro()">Actualizar</button><br>
+                    <button class="boton" onclick="limpiar()">Limpiar campos</button><br>
+                    <button class="boton" onclick="cargarTabla()">Cargar tabla</button><br>
+                </div>
+            </div>
+
+            <div class="linea"></div>
+
+            <div id="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Autor</th>
+                            <th>nEjemplares</th>
+                            <th>nDisponible</th>
+                            <th>nReservado</th>
+                            <th>vAlquiler</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="cuerpo" id="contenidoTablaLibro"></tbody>
+                </table>
+            </div>
+
+            <div id="aux"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="JS/app.js"></script>
+    </body>
+</html>

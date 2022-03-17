@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro</title>
+        <link rel="stylesheet" href="css/Estilos.css">
+    </head>
+    <body>
+        <div id="contenedorRegis">
+            <h1>Registro de usuarios</h1>
+            <input type="number" id="id" placeholder="Número de identificación"><br>
+            <input type="text" id="nombre" placeholder="Nombre"><br>
+            <input type="text" id="apellido" placeholder="Apellido"><br>
+            <input type="email" id="email" placeholder="Correo electrónico"><br>
+            <input type="password" id="psw" placeholder="Contraseña"><br>
+            <input type="password" id="psw2" placeholder="Repita la contraseña"><br>
+
+            <br><br>
+            <button id="boton" onclick="crearUsuario()">Registrar</button><br>
+            <a href="index.html">Regresar al inicio</a><br>
+            <a href="login.html">Iniciar sesión</a><br><br>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="JS/app.js"></script>
+    </body>
+</html>
